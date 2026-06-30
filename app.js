@@ -339,4 +339,251 @@ document.addEventListener('DOMContentLoaded', () => {
             quizTimer.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }, 1000);
     }
+
+    // 9. Developer Sandbox Tabs
+    const sandboxTabs = document.querySelectorAll('.sandbox-tab-btn');
+    const sandboxContentPanels = document.querySelectorAll('.sandbox-tab-content');
+
+    sandboxTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            sandboxTabs.forEach(t => t.classList.remove('active'));
+            sandboxContentPanels.forEach(p => p.classList.remove('active'));
+
+            tab.classList.add('active');
+            const targetTab = tab.getAttribute('data-tab');
+            const targetPanel = document.getElementById(`tab-${targetTab}`);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
+
+    // 10. Chapter Normalizer Sandbox
+    const normInput = document.getElementById('norm-input');
+    const normCleaned = document.getElementById('norm-cleaned');
+    const normTag = document.getElementById('norm-tag');
+    const normStatus = document.getElementById('norm-status');
+    const presetTags = document.querySelectorAll('.preset-tag');
+
+    // List of simulated pre-existing normalized tags in DB
+    const existingTags = [
+        'quadratic_equations',
+        'integral_calculus',
+        'matrices_determinants',
+        'probability_theory',
+        'trigonometry_functions'
+    ];
+
+    function runNormalization() {
+        if (!normInput || !normCleaned || !normTag || !normStatus) return;
+
+        const rawValue = normInput.value;
+        
+        // Match regex-based normalization in backend (ChapterNormalizer)
+        const cleaned = rawValue.replace(/[^a-zA-Z0-9\s]/g, '').toLowerCase().trim();
+        const tag = cleaned.replace(/\s+/g, '_');
+
+        normCleaned.textContent = cleaned || '(empty)';
+        normTag.textContent = tag || '(empty)';
+
+        if (!tag) {
+            normStatus.textContent = 'INVALID_INPUT';
+            normStatus.className = 'status-pill status-success';
+            normStatus.style.background = 'rgba(239, 68, 68, 0.15)';
+            normStatus.style.color = '#ef4444';
+            normStatus.style.borderColor = 'rgba(239, 68, 68, 0.3)';
+            return;
+        }
+
+        // Check matching
+        const exists = existingTags.includes(tag) || 
+                       existingTags.some(t => t.startsWith(tag) || tag.startsWith(t));
+
+        if (exists) {
+            normStatus.textContent = 'MATCHED_EXISTING';
+            normStatus.className = 'status-pill status-success';
+            normStatus.style.background = 'rgba(16, 185, 129, 0.15)';
+            normStatus.style.color = '#10b981';
+            normStatus.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+        } else {
+            normStatus.textContent = 'CREATED_NEW';
+            normStatus.className = 'status-pill status-success';
+            normStatus.style.background = 'rgba(6, 182, 212, 0.15)';
+            normStatus.style.color = '#06b6d4';
+            normStatus.style.borderColor = 'rgba(6, 182, 212, 0.3)';
+        }
+    }
+
+    if (normInput) {
+        normInput.addEventListener('input', runNormalization);
+    }
+
+    presetTags.forEach(preset => {
+        preset.addEventListener('click', () => {
+            if (normInput) {
+                normInput.value = preset.textContent;
+                runNormalization();
+            }
+        });
+    });
+
+    // Run initial normalization
+    runNormalization();
+
+    // 11. Scoring Engine Sandbox
+    const slideTotal = document.getElementById('slide-total');
+    const slideAttempted = document.getElementById('slide-attempted');
+    const slideCorrect = document.getElementById('slide-correct');
+
+    const valTotal = document.getElementById('slide-val-total');
+    const valAttempted = document.getElementById('slide-val-attempted');
+    const valCorrect = document.getElementById('slide-val-correct');
+
+    const scoreAccuracy = document.getElementById('score-accuracy');
+    const scoreAttAccuracy = document.getElementById('score-att-accuracy');
+    const scoreAttRate = document.getElementById('score-att-rate');
+    const scoreUnattempted = document.getElementById('score-unattempted');
+    const scoreIncorrect = document.getElementById('score-incorrect');
+
+    const fillAccuracy = document.getElementById('fill-accuracy');
+    const fillAttAccuracy = document.getElementById('fill-att-accuracy');
+    const fillAttRate = document.getElementById('fill-att-rate');
+
+    function calculateScoring() {
+        if (!slideTotal || !slideAttempted || !slideCorrect) return;
+
+        let total = parseInt(slideTotal.value);
+        let attempted = parseInt(slideAttempted.value);
+        let correct = parseInt(slideCorrect.value);
+
+        // Keep values in logical boundary conditions
+        if (attempted > total) {
+            attempted = total;
+            slideAttempted.value = attempted;
+        }
+        if (correct > attempted) {
+            correct = attempted;
+            slideCorrect.value = correct;
+        }
+
+        // Set dynamic slider max attributes
+        slideAttempted.max = total;
+        slideCorrect.max = attempted;
+
+        // Update labels
+        if (valTotal) valTotal.textContent = total;
+        if (valAttempted) valAttempted.textContent = attempted;
+        if (valCorrect) valCorrect.textContent = correct;
+
+        // Compute Canonical Scoring Formulas (from resultEvaluationService.js)
+        const unattempted = total - attempted;
+        const incorrect = attempted - correct;
+
+        const accuracy = total > 0 ? (correct / total) * 100 : 0;
+        const attemptedAccuracy = attempted > 0 ? (correct / attempted) * 100 : 0;
+        const attemptRate = total > 0 ? (attempted / total) * 100 : 0;
+
+        // Output results to DOM
+        if (scoreAccuracy) scoreAccuracy.textContent = `${accuracy.toFixed(1)}%`;
+        if (scoreAttAccuracy) scoreAttAccuracy.textContent = `${attemptedAccuracy.toFixed(1)}%`;
+        if (scoreAttRate) scoreAttRate.textContent = `${attemptRate.toFixed(1)}%`;
+        if (scoreUnattempted) scoreUnattempted.textContent = unattempted;
+        if (scoreIncorrect) scoreIncorrect.textContent = incorrect;
+
+        // Update progress fills
+        if (fillAccuracy) fillAccuracy.style.width = `${accuracy}%`;
+        if (fillAttAccuracy) fillAttAccuracy.style.width = `${attemptedAccuracy}%`;
+        if (fillAttRate) fillAttRate.style.width = `${attemptRate}%`;
+    }
+
+    if (slideTotal) slideTotal.addEventListener('input', calculateScoring);
+    if (slideAttempted) slideAttempted.addEventListener('input', calculateScoring);
+    if (slideCorrect) slideCorrect.addEventListener('input', calculateScoring);
+
+    // Initial Scoring Calculation
+    calculateScoring();
+
+    // 12. Diagnostics Terminal Auditor Simulation
+    const btnRunAudit = document.getElementById('btn-run-audit');
+    const terminalOutput = document.getElementById('terminal-output');
+    let isAuditing = false;
+
+    const auditScriptLines = [
+        { type: 'cmd', text: './security-audit.sh' },
+        { type: 'info', text: 'Initializing MathsWithSD Automated Security & Performance Audit...' },
+        { type: 'info', text: 'Connecting to database instance: MONGODB_URI_DIRECT (Atlas Replica Set)' },
+        { type: 'success', text: '✓ MongoDB connection active: Cluster0.517bkho.mongodb.net (Latency 54ms)' },
+        { type: 'info', text: 'Auditing collection indexes and payload structures...' },
+        { type: 'success', text: '✓ Verified optimized indexing on chapter tag and cohort queues.' },
+        { type: 'info', text: 'Checking NoSQL query injection vector guards...' },
+        { type: 'success', text: '✓ Verified express-mongo-sanitize filters (Active)' },
+        { type: 'info', text: 'Testing JWT auth endpoints and parameter sanitization...' },
+        { type: 'success', text: '✓ Verified token signature verification keys & rate limiters.' },
+        { type: 'info', text: 'Probing Mathpix OCR background workers & queues...' },
+        { type: 'success', text: '✓ Verified Mathpix OCR queue server ping (Response: 200 OK, Latency: 94ms)' },
+        { type: 'info', text: 'Auditing proctoring clock drift tampered records...' },
+        { type: 'warn', text: '! Warning: Offline proctoring logs detected 3 warning events. Cleared.' },
+        { type: 'success', text: '✓ Verified local device anti-time tampering security verification.' },
+        { type: 'info', text: 'Compile check: running scoring evaluation tests...' },
+        { type: 'info', text: 'node --test test/scoring_evaluation.test.js' },
+        { type: 'success', text: '✔ resultEvaluationService: accuracy percent calculation (8ms)' },
+        { type: 'success', text: '✔ resultEvaluationService: attempted accuracy calculation (3ms)' },
+        { type: 'success', text: '✔ resultEvaluationService: unattempted questions mapping (4ms)' },
+        { type: 'success', text: '✓ All 12 scoring test fixtures passed successfully.' },
+        { type: 'info', text: '────────────────────────────────────────────────────────' },
+        { type: 'success', text: 'OPERATIONAL READINESS STATUS: READY FOR STAGING/PROD' },
+        { type: 'success', text: 'Droplet Host 168.144.67.199: verified compliant.' },
+        { type: 'info', text: 'Deployment recommendation: SAFE TO LAUNCH (PM2 reload)' }
+    ];
+
+    if (btnRunAudit && terminalOutput) {
+        btnRunAudit.addEventListener('click', () => {
+            if (isAuditing) return;
+            isAuditing = true;
+            btnRunAudit.disabled = true;
+            btnRunAudit.textContent = "Auditing System...";
+
+            // Clear terminal
+            terminalOutput.innerHTML = '';
+
+            let currentLine = 0;
+            
+            function printNextLine() {
+                if (currentLine >= auditScriptLines.length) {
+                    isAuditing = false;
+                    btnRunAudit.disabled = false;
+                    btnRunAudit.textContent = "Execute Security Audit";
+                    
+                    // Add cursor at the end
+                    const promptLine = document.createElement('div');
+                    promptLine.className = 'terminal-line cursor';
+                    promptLine.innerHTML = '<span style="color: #4ade80">root@droplet-168-144-67-199:~#</span> ';
+                    terminalOutput.appendChild(promptLine);
+                    terminalOutput.scrollTop = terminalOutput.scrollHeight;
+                    return;
+                }
+
+                const lineData = auditScriptLines[currentLine];
+                const lineElement = document.createElement('div');
+                lineElement.className = `terminal-line ${lineData.type}`;
+                
+                if (lineData.type === 'cmd') {
+                    lineElement.innerHTML = `<span style="color: #4ade80">root@droplet-168-144-67-199:~#</span> ${lineData.text}`;
+                } else {
+                    lineElement.textContent = lineData.text;
+                }
+
+                terminalOutput.appendChild(lineElement);
+                terminalOutput.scrollTop = terminalOutput.scrollHeight;
+
+                currentLine++;
+                
+                // Random delay between lines for typing speed effect
+                const delay = lineData.type === 'cmd' ? 800 : Math.random() * 200 + 100;
+                setTimeout(printNextLine, delay);
+            }
+
+            printNextLine();
+        });
+    }
 });
