@@ -12,11 +12,11 @@ export default function MathBackground() {
   ];
 
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-[0.03] dark:opacity-[0.06] select-none select-none transition-opacity">
+    <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-[0.03] select-none select-none transition-opacity">
       {equations.map((eq, i) => (
         <div
           key={i}
-          className={`absolute animate-pulse ${eq.speed} ${eq.delay} text-slate-800 dark:text-slate-100 font-serif italic ${eq.size} whitespace-nowrap`}
+          className={`absolute animate-pulse ${eq.speed} ${eq.delay} text-slate-800 font-serif italic ${eq.size} whitespace-nowrap`}
           style={{
             top: eq.top,
             left: eq.left,

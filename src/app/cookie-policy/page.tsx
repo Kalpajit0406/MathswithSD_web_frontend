@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function CookiePolicy() {
   return (
-    <div className="relative py-16 lg:py-24 bg-slate-50 dark:bg-slate-950 min-h-screen">
+    <div className="relative py-16 lg:py-24 bg-slate-50 min-h-screen">
       <MathBackground />
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -15,7 +15,7 @@ export default function CookiePolicy() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Legal Policy</span>
-          <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">
+          <h1 className="text-4xl font-extrabold text-slate-900">
             Cookie Policy
           </h1>
           <p className="text-sm text-slate-400">
@@ -23,17 +23,17 @@ export default function CookiePolicy() {
           </p>
         </div>
 
-        <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 rounded-3xl p-8 lg:p-12 shadow-sm prose prose-slate dark:prose-invert max-w-none text-sm text-slate-600 dark:text-slate-400 leading-relaxed flex flex-col gap-6">
+        <div className="bg-white border border-slate-200 rounded-3xl p-8 lg:p-12 shadow-sm prose prose-slate max-w-none text-sm text-slate-600 leading-relaxed flex flex-col gap-6">
           
           <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">1. What Are Cookies?</h2>
+            <h2 className="text-xl font-bold text-slate-900">1. What Are Cookies?</h2>
             <p>
               Cookies are small text files stored on your device by your web browser when you visit websites. They are widely used to make websites function efficiently and to provide user settings persistence.
             </p>
           </section>
 
           <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">2. How We Use Cookies</h2>
+            <h2 className="text-xl font-bold text-slate-900">2. How We Use Cookies</h2>
             <p>
               Our website uses cookies strictly for essential preferences and interface configurations:
             </p>
@@ -44,14 +44,14 @@ export default function CookiePolicy() {
           </section>
 
           <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">3. Third-Party Cookies</h2>
+            <h2 className="text-xl font-bold text-slate-900">3. Third-Party Cookies</h2>
             <p>
               We do not use any third-party tracking cookies, analytics tags (e.g. Google Analytics), or marketing beacons on our website.
             </p>
           </section>
 
           <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">4. Managing Your Cookies</h2>
+            <h2 className="text-xl font-bold text-slate-900">4. Managing Your Cookies</h2>
             <p>
               You can disable or delete cookies via your web browser settings. Please note that disabling essential cookies may impact certain interface preferences, such as default dark mode persistence.
             </p>

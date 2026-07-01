@@ -194,7 +194,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="relative py-16 lg:py-24 bg-slate-50 dark:bg-slate-950 min-h-screen">
+    <div className="relative py-16 lg:py-24 bg-slate-50 min-h-screen">
       <MathBackground />
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -202,10 +202,10 @@ export default function FAQ() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-12">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Support Center</span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900">
             Frequently Asked Questions
           </h1>
-          <p className="text-base text-slate-500 dark:text-slate-400">
+          <p className="text-base text-slate-500">
             Find answers to common questions about accounts, scoring, offline recovery, and kiosk proctoring.
           </p>
         </div>
@@ -218,7 +218,7 @@ export default function FAQ() {
               placeholder="Search FAQs (e.g. proctoring, offset, offline)..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full px-12 py-3.5 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
+              className="w-full px-12 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
             />
             <Search className="absolute left-4.5 top-4 text-slate-400" size={18} />
           </div>
@@ -231,7 +231,7 @@ export default function FAQ() {
                 className={`px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
                   activeTab === tab
                     ? "bg-gradient-to-r from-violet-600 to-cyan-500 text-white shadow-md shadow-cyan-500/10"
-                    : "bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800"
+                    : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-100"
                 }`}
               >
                 {tab}
@@ -248,11 +248,11 @@ export default function FAQ() {
               return (
                 <div 
                   key={idx}
-                  className="rounded-2xl border border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-900/40 overflow-hidden shadow-sm transition-colors"
+                  className="rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-sm transition-colors"
                 >
                   <button
                     onClick={() => toggleExpand(idx)}
-                    className="w-full px-6 py-5 text-left flex items-start justify-between gap-4 font-bold text-slate-900 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors cursor-pointer"
+                    className="w-full px-6 py-5 text-left flex items-start justify-between gap-4 font-bold text-slate-900 hover:text-cyan-500 transition-colors cursor-pointer"
                   >
                     <div className="flex gap-3 items-start">
                       <HelpCircle className="text-cyan-500 mt-0.5 flex-shrink-0" size={18} />
@@ -265,7 +265,7 @@ export default function FAQ() {
                     )}
                   </button>
                   {isExpanded && (
-                    <div className="px-6 pb-6 pt-1 text-sm text-slate-500 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 animate-in fade-in duration-200 pl-11">
+                    <div className="px-6 pb-6 pt-1 text-sm text-slate-500 leading-relaxed border-t border-slate-100 animate-in fade-in duration-200 pl-11">
                       {faq.a}
                     </div>
                   )}

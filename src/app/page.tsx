@@ -47,15 +47,15 @@ export default function Home() {
   const [selectedCohort, setSelectedCohort] = useState("jee");
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-x-hidden bg-white dark:bg-slate-950">
+    <div className="relative flex flex-col items-center justify-center w-full min-h-screen overflow-x-hidden bg-white">
       
       {/* Hero Section */}
-      <section className="relative w-full py-16 lg:py-24 flex items-center justify-center border-b border-slate-100 dark:border-slate-900/50 bg-gradient-to-b from-blue-50/70 via-white to-white dark:from-slate-900/10 dark:via-slate-950 dark:to-slate-950">
+      <section className="relative w-full py-16 lg:py-24 flex items-center justify-center border-b border-slate-100 bg-gradient-to-b from-blue-50/70 via-white to-white">
         <MathBackground />
         
         {/* Glow Effects */}
-        <div className="absolute top-20 right-0 w-[400px] h-[400px] bg-blue-500/10 dark:bg-blue-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
-        <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-rose-500/10 dark:bg-rose-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
+        <div className="absolute top-20 right-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none z-0" />
+        <div className="absolute bottom-10 left-0 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[120px] pointer-events-none z-0" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -66,7 +66,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex self-start items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider text-blue-600 dark:text-blue-400 bg-blue-500/10 border border-blue-500/20 uppercase"
+                className="inline-flex self-start items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider text-blue-600 bg-blue-500/10 border border-blue-500/20 uppercase"
               >
                 🚀 Advanced Mathematics Testing Suite
               </motion.div>
@@ -75,7 +75,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900 dark:text-white"
+                className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900"
               >
                 Score Higher with <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-rose-500 bg-clip-text text-transparent">Vibrant Practice</span> & Real-Time Analytics
               </motion.h1>
@@ -84,7 +84,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-lg text-slate-600 dark:text-slate-400 max-w-xl font-medium leading-relaxed"
+                className="text-lg text-slate-600 max-w-xl font-medium leading-relaxed"
               >
                 Take control of your learning. Attempt teacher-assigned timed exams, practice chapter-wise mock tests, and analyze your performance with our high-performance student app.
               </motion.p>
@@ -104,7 +104,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/about"
-                  className="flex items-center gap-1 rounded-2xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 px-7 py-3.5 text-base font-bold transition-all border border-slate-200 dark:border-slate-800"
+                  className="flex items-center gap-1 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-900 px-7 py-3.5 text-base font-bold transition-all border border-slate-200"
                 >
                   <span>Learn More</span>
                   <ChevronRight size={16} />
@@ -116,14 +116,14 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8 pt-8 border-t border-slate-200 dark:border-slate-800/80"
+                className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8 pt-8 border-t border-slate-200"
               >
                 {stats.map((stat, i) => (
                   <div key={i} className="flex flex-col">
-                    <span className="text-2xl font-extrabold text-blue-600 dark:text-blue-400">
+                    <span className="text-2xl font-extrabold text-blue-600">
                       {stat.value}
                     </span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 mt-1 font-semibold uppercase tracking-wider">
+                    <span className="text-xs text-slate-500 mt-1 font-semibold uppercase tracking-wider">
                       {stat.label}
                     </span>
                   </div>
@@ -137,7 +137,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="w-full max-w-[420px] aspect-[4/5] rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-850 shadow-2xl p-2 relative group bg-white dark:bg-slate-900"
+                className="w-full max-w-[420px] aspect-[4/5] rounded-3xl overflow-hidden border border-slate-200 shadow-2xl p-2 relative group bg-white"
               >
                 <div className="relative w-full h-full rounded-2xl overflow-hidden bg-slate-950">
                   <Image
@@ -158,15 +158,15 @@ export default function Home() {
       </section>
 
       {/* Cohorts / Class Selector Section (PW-Style) */}
-      <section className="w-full py-16 bg-slate-50 dark:bg-slate-900/20 border-b border-slate-100 dark:border-slate-900/50">
+      <section className="w-full py-16 bg-slate-50 border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto flex flex-col gap-3 mb-12">
             <span className="text-xs font-bold tracking-widest text-rose-500 uppercase">Target Learning Groups</span>
-            <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white">
+            <h2 className="text-3xl font-extrabold text-slate-900">
               Choose Your Target Cohort
             </h2>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
+            <p className="text-sm text-slate-500">
               Access curated tests, leaderboards, and study schedules built specifically for your academic goals.
             </p>
           </div>
@@ -183,8 +183,8 @@ export default function Home() {
                     onClick={() => setSelectedCohort(cohort.id)}
                     className={`flex items-center gap-4 p-4 rounded-2xl border text-left transition-all duration-200 ${
                       isSelected
-                        ? "bg-white dark:bg-slate-900 border-blue-500 shadow-md text-blue-600 dark:text-blue-400"
-                        : "bg-white/40 dark:bg-transparent border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 text-slate-700 dark:text-slate-300"
+                        ? "bg-white border-blue-500 shadow-md text-blue-600"
+                        : "bg-white/40 border-slate-200 hover:border-slate-300 text-slate-700"
                     }`}
                   >
                     <div className={`flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr ${cohort.color} text-white`}>
@@ -192,7 +192,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col flex-grow">
                       <span className="font-bold text-sm">{cohort.name}</span>
-                      <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1">Explore features</span>
+                      <span className="text-xs text-slate-500 mt-0.5 line-clamp-1">Explore features</span>
                     </div>
                     {cohort.badge && (
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-500 text-white uppercase tracking-wider">
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
 
             {/* Cohort Details Panel */}
-            <div className="lg:col-span-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 shadow-sm flex flex-col justify-between min-h-[300px]">
+            <div className="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-col justify-between min-h-[300px]">
               {cohorts.map((cohort) => {
                 if (cohort.id !== selectedCohort) return null;
                 const Icon = cohort.icon;
@@ -215,15 +215,15 @@ export default function Home() {
                       <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-tr ${cohort.color} text-white shadow-lg`}>
                         <Icon size={28} />
                       </div>
-                      <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white">
+                      <h3 className="text-2xl font-extrabold text-slate-900">
                         {cohort.name} Assessment Path
                       </h3>
-                      <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+                      <p className="text-base text-slate-600 leading-relaxed">
                         {cohort.desc} Students enrolled under this cohort will receive automatic updates when new worksheets are published by the educator. The curriculum covers foundational math, advanced exercises, and periodic review sessions.
                       </p>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 pt-6 border-t border-slate-100 dark:border-slate-800">
+                    <div className="flex flex-wrap gap-4 pt-6 border-t border-slate-100">
                       <Link
                         href="/download"
                         className="inline-flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 text-sm font-bold transition-all shadow-md shadow-blue-500/10"
@@ -233,7 +233,7 @@ export default function Home() {
                       </Link>
                       <Link
                         href="/student-guide"
-                        className="inline-flex items-center gap-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 px-5 py-2.5 text-sm font-bold transition-all"
+                        className="inline-flex items-center gap-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2.5 text-sm font-bold transition-all"
                       >
                         <span>View Guide</span>
                       </Link>
@@ -248,15 +248,15 @@ export default function Home() {
       </section>
 
       {/* Features Grid Section */}
-      <section id="features" className="w-full py-20 lg:py-24 bg-white dark:bg-slate-950 relative">
+      <section id="features" className="w-full py-20 lg:py-24 bg-white relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto flex flex-col gap-3 mb-16">
-            <span className="text-xs font-bold tracking-widest text-blue-600 dark:text-blue-400 uppercase">System Highlights</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+            <span className="text-xs font-bold tracking-widest text-blue-600 uppercase">System Highlights</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
               Structured to Elevate Mathematics Learning
             </h2>
-            <p className="text-base text-slate-500 dark:text-slate-400">
+            <p className="text-base text-slate-500">
               Discover the robust feature set designed to deliver seamless timed testing, offline proctoring, and instant evaluations.
             </p>
           </div>
@@ -271,15 +271,15 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.05 }}
-                  className="group relative flex flex-col gap-4 p-8 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-850 hover:border-blue-500/30 dark:hover:border-blue-500/20 hover:bg-slate-50/50 dark:hover:bg-slate-900/30 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="group relative flex flex-col gap-4 p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-500/30 hover:bg-slate-50/50 shadow-sm hover:shadow-md transition-all duration-300"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
                     <Icon size={22} />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                  <p className="text-sm text-slate-500 leading-relaxed">
                     {feature.desc}
                   </p>
                 </motion.div>
@@ -291,15 +291,15 @@ export default function Home() {
       </section>
 
       {/* FAQ Preview Section */}
-      <section className="w-full py-16 lg:py-24 bg-slate-50 dark:bg-slate-900/10 border-t border-b border-slate-100 dark:border-slate-900/50">
+      <section className="w-full py-16 lg:py-24 bg-slate-50 border-t border-b border-slate-100">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto flex flex-col gap-3 mb-16">
             <span className="text-xs font-bold tracking-widest text-rose-500 uppercase">Common Questions</span>
-            <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white">
+            <h2 className="text-3xl font-extrabold text-slate-900">
               General App FAQ Preview
             </h2>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
+            <p className="text-sm text-slate-500">
               Need help? Here are some quick answers to guide you. For a comprehensive list, visit our full FAQ page.
             </p>
           </div>
@@ -308,15 +308,15 @@ export default function Home() {
             {faqPreview.map((item, i) => (
               <div 
                 key={i}
-                className="rounded-2xl border border-slate-200 dark:border-slate-850 bg-white dark:bg-slate-900/60 p-6 shadow-sm flex flex-col gap-3"
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col gap-3"
               >
                 <div className="flex items-start gap-3">
                   <HelpCircle className="text-rose-500 mt-0.5 flex-shrink-0" size={18} />
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
+                  <h3 className="text-base font-bold text-slate-900 leading-snug">
                     {item.q}
                   </h3>
                 </div>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed pl-7">
+                <p className="text-sm text-slate-500 leading-relaxed pl-7">
                   {item.a}
                 </p>
               </div>

@@ -45,7 +45,7 @@ const logs = [
 
 export default function Changelog() {
   return (
-    <div className="relative py-16 lg:py-24 bg-slate-50 dark:bg-slate-950 min-h-screen">
+    <div className="relative py-16 lg:py-24 bg-slate-50 min-h-screen">
       <MathBackground />
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -53,10 +53,10 @@ export default function Changelog() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Version Control</span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900">
             Changelog & Releases
           </h1>
-          <p className="text-base text-slate-500 dark:text-slate-400">
+          <p className="text-base text-slate-500">
             A comprehensive log tracking core feature additions, optimization patches, and proctoring upgrades.
           </p>
         </div>
@@ -66,18 +66,18 @@ export default function Changelog() {
           {logs.map((log, idx) => (
             <div 
               key={idx}
-              className="flex flex-col gap-4 p-8 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 shadow-sm"
+              className="flex flex-col gap-4 p-8 rounded-3xl bg-white border border-slate-200 shadow-sm"
             >
-              <div className="flex justify-between items-center border-b border-slate-100 dark:border-slate-800 pb-3 flex-wrap gap-2">
+              <div className="flex justify-between items-center border-b border-slate-100 pb-3 flex-wrap gap-2">
                 <div className="flex items-center gap-2">
                   <Tag size={16} className="text-cyan-500" />
-                  <span className="font-heading text-lg font-bold text-slate-900 dark:text-white">{log.version}</span>
+                  <span className="font-heading text-lg font-bold text-slate-900">{log.version}</span>
                 </div>
                 <span className="text-xs text-slate-400 font-medium">{log.date}</span>
               </div>
               <ul className="flex flex-col gap-3 mt-1">
                 {log.changes.map((change, cIdx) => (
-                  <li key={cIdx} className="flex items-start gap-2.5 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                  <li key={cIdx} className="flex items-start gap-2.5 text-sm text-slate-500 leading-relaxed">
                     <GitCommit size={14} className="text-violet-500 mt-1 flex-shrink-0" />
                     <span>{change}</span>
                   </li>

@@ -20,7 +20,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-colors">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md transition-colors">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -28,7 +28,7 @@ export default function Navbar() {
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-rose-500 text-white font-bold shadow-md shadow-blue-500/20">
               <span className="text-xl">+</span>
             </div>
-            <span className="font-heading text-lg font-extrabold text-slate-900 dark:text-white tracking-tight">
+            <span className="font-heading text-lg font-extrabold text-slate-900 tracking-tight">
               MathsWith<span className="text-blue-600 group-hover:text-blue-500 transition-colors">SD</span>
             </span>
           </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
                 className={`text-sm font-semibold transition-colors hover:text-blue-600 ${
                   pathname === link.href
                     ? "text-blue-600 font-extrabold"
-                    : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100"
+                    : "text-slate-600 hover:text-slate-900"
                 }`}
               >
                 {link.label}
@@ -67,7 +67,7 @@ export default function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              className="p-2 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -78,7 +78,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       {isOpen && (
-        <div className="md:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 animate-in slide-in-from-top duration-350">
+        <div className="md:hidden border-b border-slate-200 bg-white animate-in slide-in-from-top duration-350">
           <div className="space-y-1 px-4 pb-6 pt-3">
             {links.map((link) => (
               <Link
@@ -87,8 +87,8 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block rounded-lg px-3 py-2 text-base font-semibold transition-colors ${
                   pathname === link.href
-                    ? "bg-slate-50 dark:bg-slate-900 text-blue-600"
-                    : "text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
+                    ? "bg-slate-50 text-blue-600"
+                    : "text-slate-700 hover:bg-slate-50"
                 }`}
               >
                 {link.label}

@@ -58,7 +58,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <div className="relative py-16 lg:py-24 bg-slate-50 dark:bg-slate-950 min-h-screen">
+    <div className="relative py-16 lg:py-24 bg-slate-50 min-h-screen">
       <MathBackground />
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -66,10 +66,10 @@ export default function HowItWorks() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Step-by-step</span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900">
             How It Works
           </h1>
-          <p className="text-base text-slate-500 dark:text-slate-400">
+          <p className="text-base text-slate-500">
             A quick visual guide outlining the student registration and examination workflow.
           </p>
         </div>
@@ -81,16 +81,16 @@ export default function HowItWorks() {
             return (
               <div 
                 key={idx}
-                className="flex flex-col md:flex-row gap-6 p-6 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 shadow-sm relative group hover:border-cyan-500/20 dark:hover:border-cyan-500/10 transition-colors"
+                className="flex flex-col md:flex-row gap-6 p-6 rounded-3xl bg-white border border-slate-200 shadow-sm relative group hover:border-cyan-500/20 transition-colors"
               >
-                <div className="flex-shrink-0 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-600 dark:bg-cyan-500/20 dark:text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                <div className="flex-shrink-0 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-600 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
                   <Icon size={24} />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h2 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors">
+                  <h2 className="text-lg font-bold text-slate-900 group-hover:text-cyan-500 transition-colors">
                     {step.title}
                   </h2>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                  <p className="text-sm text-slate-500 leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

@@ -95,7 +95,7 @@ const troubleShooting = [
 
 export default function StudentGuide() {
   return (
-    <div className="relative py-16 lg:py-24 bg-slate-50 dark:bg-slate-950 min-h-screen">
+    <div className="relative py-16 lg:py-24 bg-slate-50 min-h-screen">
       <MathBackground />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -103,10 +103,10 @@ export default function StudentGuide() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Knowledge Base</span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900">
             Student Application Guide
           </h1>
-          <p className="text-base text-slate-500 dark:text-slate-400">
+          <p className="text-base text-slate-500">
             A comprehensive manual describing how to register, take proctored tests, and review performance stats in MathsWithSD.
           </p>
         </div>
@@ -120,15 +120,15 @@ export default function StudentGuide() {
               return (
                 <div 
                   key={idx}
-                  className="flex flex-col gap-4 p-8 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 shadow-sm"
+                  className="flex flex-col gap-4 p-8 rounded-3xl bg-white border border-slate-200 shadow-sm"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-500/10 text-violet-600 dark:bg-violet-500/20 dark:text-violet-400">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-500/10 text-violet-600">
                       <Icon size={20} />
                     </div>
-                    <h2 className="text-lg font-bold text-slate-900 dark:text-white">{section.title}</h2>
+                    <h2 className="text-lg font-bold text-slate-900">{section.title}</h2>
                   </div>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                  <p className="text-sm text-slate-500 leading-relaxed">
                     {section.desc}
                   </p>
                 </div>
@@ -137,17 +137,17 @@ export default function StudentGuide() {
           </div>
 
           {/* Troubleshooting section */}
-          <div className="flex flex-col gap-6 p-8 rounded-3xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 shadow-sm mt-8">
+          <div className="flex flex-col gap-6 p-8 rounded-3xl bg-white border border-slate-200 shadow-sm mt-8">
             <div className="flex items-center gap-3 justify-center">
               <AlertTriangle className="text-amber-500" size={24} />
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Common Troubleshooting Situations</h3>
+              <h3 className="text-2xl font-bold text-slate-900">Common Troubleshooting Situations</h3>
             </div>
             
             <div className="flex flex-col gap-6 mt-4">
               {troubleShooting.map((t, i) => (
-                <div key={i} className="flex flex-col gap-2 text-sm border-b border-slate-100 dark:border-slate-800 pb-4 last:border-0 last:pb-0">
-                  <span className="font-bold text-slate-850 dark:text-slate-200">{t.q}</span>
-                  <span className="text-slate-550 dark:text-slate-400 leading-relaxed">{t.a}</span>
+                <div key={i} className="flex flex-col gap-2 text-sm border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+                  <span className="font-bold text-slate-850">{t.q}</span>
+                  <span className="text-slate-550 leading-relaxed">{t.a}</span>
                 </div>
               ))}
             </div>
