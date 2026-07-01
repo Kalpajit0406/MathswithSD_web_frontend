@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -21,7 +21,8 @@ const cohorts = [
   { id: "jee", name: "IIT JEE Prep", desc: "Rigorous test series modeled exactly on the JEE Main & Advanced formats.", badge: "Vibrant", icon: Target, color: "from-blue-600 to-indigo-600" },
   { id: "class12", name: "Class 12 Boards", desc: "Chapter-wise sheets, previous years' board papers, and evaluation drills.", badge: "New", icon: GraduationCap, color: "from-rose-500 to-pink-600" },
   { id: "class11", name: "Class 11 Practice", desc: "Foundation concept-builder quizzes and weekly mock assignments.", icon: BookOpen, color: "from-amber-500 to-orange-500" },
-  { id: "class10", name: "Class 10 Foundation", desc: "Early preparation assessments for boards and competitive examinations.", icon: Layers, color: "from-emerald-500 to-teal-500" }
+  { id: "class10", name: "Class 10 Foundation", desc: "Early preparation assessments for boards and competitive examinations.", icon: Layers, color: "from-emerald-500 to-teal-500" },
+  { id: "class9", name: "Class 9 Starter", desc: "Introductory assessments to build core mathematical foundations and exam readiness.", icon: Users, color: "from-violet-500 to-purple-600" }
 ];
 
 const features = [
@@ -38,7 +39,7 @@ const features = [
 
 const faqPreview = [
   { q: "How do I create a student account?", a: "Download the student app from the Google Play Store, click 'Register', and enter your mobile number. A registration request will be sent to the administrator. Once approved, you can log in." },
-  { q: "What happens if my internet connection drops during an exam?", a: "MathsWithSD saves your answers locally in a secure offline cache. You can continue taking your test. Once internet is restored, the progress automatically syncs to the server." },
+  { q: "What happens if my internet connection drops during an exam?", a: "MathswithSD saves your answers locally in a secure offline cache. You can continue taking your test. Once internet is restored, the progress automatically syncs to the server." },
   { q: "How are my test scores and metrics calculated?", a: "Scores are evaluated using standard canonical formulas: overall accuracy (based on total test questions), attempted accuracy (correct answers over attempted questions), and attempt rate." },
   { q: "Why can't I immediately see my exam results?", a: "If the test is scheduled for a specific time window, scores remain hidden until the exam time officially closes to prevent answers from being shared between students." }
 ];
@@ -142,7 +143,7 @@ export default function Home() {
                 <div className="relative w-full h-full rounded-2xl overflow-hidden bg-slate-950">
                   <Image
                     src="/hero_showcase.jpg"
-                    alt="MathsWithSD App Interface Showcase"
+                    alt="MathswithSD App Interface Showcase"
                     fill
                     sizes="(max-w-7xl) 100vw, 420px"
                     priority
@@ -162,9 +163,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto flex flex-col gap-3 mb-12">
-            <span className="text-xs font-bold tracking-widest text-rose-500 uppercase">Target Learning Groups</span>
+            <span className="text-xs font-bold tracking-widest text-rose-500 uppercase">Learning Groups</span>
             <h2 className="text-3xl font-extrabold text-slate-900">
-              Choose Your Target Cohort
+              Explore Classes
             </h2>
             <p className="text-sm text-slate-500">
               Access curated tests, leaderboards, and study schedules built specifically for your academic goals.

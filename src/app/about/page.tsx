@@ -1,9 +1,9 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 import { BookOpen, Award, Shield, Users } from "lucide-react";
 
 export const metadata = {
-  title: "About Us — MathsWithSD",
-  description: "Learn more about MathsWithSD: our mission, educational philosophy, and how we are modernizing mathematics learning for students.",
+  title: "About Us — MathswithSD",
+  description: "Learn more about MathswithSD: our mission, educational philosophy, and how we are modernizing mathematics learning for students.",
 };
 
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Our Story</span>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900">
-            About MathsWithSD
+            About MathswithSD
           </h1>
           <p className="text-base text-slate-500">
             Learn about our core philosophy, technological achievements, and commitment to making math learning accessible.
@@ -30,9 +30,9 @@ export default function About() {
           {/* Section 1: Intro */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
             <div className="flex flex-col gap-4">
-              <h2 className="text-2xl font-bold text-slate-900">What is MathsWithSD?</h2>
+              <h2 className="text-2xl font-bold text-slate-900">What is MathswithSD?</h2>
               <p className="text-sm text-slate-600 leading-relaxed">
-                MathsWithSD is a premium, secure educational testing ecosystem built around two coordination points: an administrative dashboard for the educator and a mobile assessment application for the student.
+                MathswithSD is a premium, secure educational testing ecosystem built around two coordination points: an administrative dashboard for the educator and a mobile assessment application for the student.
               </p>
               <p className="text-sm text-slate-600 leading-relaxed">
                 By integrating our advanced mathematical rendering engine, we eliminate the traditional barriers of typesetting complex formulas, allowing teachers to create and convert equations into fully renderable LaTeX questions instantly.
@@ -80,7 +80,7 @@ export default function About() {
           <div className="flex flex-col gap-6 p-8 rounded-3xl bg-white border border-slate-200 shadow-sm">
             <h3 className="text-2xl font-bold text-slate-900 text-center">Our Educational Philosophy</h3>
             <p className="text-sm text-slate-500 leading-relaxed max-w-3xl mx-auto text-center">
-              We believe that mathematics is best mastered through consistent, targeted practice and immediate review. Traditional grading delayed feedback loops by days, leaving students disconnected from their mistakes. MathsWithSD solves this by providing instant scoring evaluations and detailed answer reviews. By targeting assessments by chapter, we encourage focused remediation over general study.
+              We believe that mathematics is best mastered through consistent, targeted practice and immediate review. Traditional grading delayed feedback loops by days, leaving students disconnected from their mistakes. MathswithSD solves this by providing instant scoring evaluations and detailed answer reviews. By targeting assessments by chapter, we encourage focused remediation over general study.
             </p>
           </div>
 

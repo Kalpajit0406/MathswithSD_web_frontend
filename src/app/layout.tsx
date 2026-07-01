@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -15,22 +15,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MathsWithSD — AI-Powered Math Learning & Examination Suite",
-  description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, live leaderboards, and proctoring.",
-  keywords: ["MathsWithSD", "math assessment", "math quiz", "math solver", "proctored exam", "student math", "LaTeX solver"],
+  title: "MathswithSD — AI-Powered Math Learning & Examination Suite",
+  description: "Discover MathswithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, live leaderboards, and proctoring.",
+  keywords: ["MathswithSD", "math assessment", "math quiz", "math solver", "proctored exam", "student math", "LaTeX solver"],
   authors: [{ name: "Kalpajit Bepary" }],
   robots: "index, follow",
   openGraph: {
-    title: "MathsWithSD — AI-Powered Math Learning & Examination Suite",
-    description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, and proctoring.",
-    url: "https://mathswithsd.in",
-    siteName: "MathsWithSD",
+    title: "MathswithSD — AI-Powered Math Learning & Examination Suite",
+    description: "Discover MathswithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, and proctoring.",
+    url: "https://MathswithSD.in",
+    siteName: "MathswithSD",
     images: [
       {
         url: "/hero_showcase.jpg",
         width: 1200,
         height: 630,
-        alt: "MathsWithSD Platform Preview",
+        alt: "MathswithSD Platform Preview",
       },
     ],
     locale: "en_US",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MathsWithSD — AI-Powered Math Learning & Examination Suite",
-    description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, and proctoring.",
+    title: "MathswithSD — AI-Powered Math Learning & Examination Suite",
+    description: "Discover MathswithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, and proctoring.",
     images: ["/hero_showcase.jpg"],
   },
 };

@@ -1,8 +1,8 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 
 export const metadata = {
-  title: "Accessibility Statement — MathsWithSD",
-  description: "Official accessibility statement and WCAG AA compliance status for the MathsWithSD platform.",
+  title: "Accessibility Statement — MathswithSD",
+  description: "Official accessibility statement and WCAG AA compliance status for the MathswithSD platform.",
 };
 
 export default function Accessibility() {
@@ -28,7 +28,7 @@ export default function Accessibility() {
           <section className="flex flex-col gap-2">
             <h2 className="text-xl font-bold text-slate-900">1. Commitment to Accessibility</h2>
             <p>
-              At MathsWithSD, we believe that education must be accessible to everyone, regardless of physical ability or device limitations. We actively work to design and build our mobile and web applications to meet the Web Content Accessibility Guidelines (WCAG 2.1) Level AA standard.
+              At MathswithSD, we believe that education must be accessible to everyone, regardless of physical ability or device limitations. We actively work to design and build our mobile and web applications to meet the Web Content Accessibility Guidelines (WCAG 2.1) Level AA standard.
             </p>
           </section>
 
@@ -48,7 +48,7 @@ export default function Accessibility() {
           <section className="flex flex-col gap-2">
             <h2 className="text-xl font-bold text-slate-900">3. Technical Specifications</h2>
             <p>
-              Accessibility of the MathsWithSD portal relies on the following technologies to work with browser and screen reader configurations:
+              Accessibility of the MathswithSD portal relies on the following technologies to work with browser and screen reader configurations:
             </p>
             <ul className="list-disc pl-5 flex flex-col gap-1.5 mt-1">
               <li>HTML5 Semantic tags</li>
@@ -60,7 +60,7 @@ export default function Accessibility() {
           <section className="flex flex-col gap-2">
             <h2 className="text-xl font-bold text-slate-900">4. Feedback & Contact</h2>
             <p>
-              If you experience accessibility barriers while using our student app or website, please contact Kalpajit Bepary at <a href="mailto:kalpajit.dev@mathswithsd.in" className="text-cyan-500 hover:underline">kalpajit.dev@mathswithsd.in</a>. We will address potential improvements within 7 business days.
+              If you experience accessibility barriers while using our student app or website, please contact Kalpajit Bepary at <a href="mailto:kalpajit.dev@MathswithSD.in" className="text-cyan-500 hover:underline">kalpajit.dev@MathswithSD.in</a>. We will address potential improvements within 7 business days.
             </p>
           </section>
 

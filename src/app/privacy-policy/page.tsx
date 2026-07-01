@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import MathBackground from "@/components/MathBackground";
 import { Shield, ArrowLeft, Calendar, FileText, Info } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy — MathsWithSD",
-  description: "Privacy Policy for MathsWithSD. Learn about how we collect, protect, and use student data, test answers, and scanning details.",
+  title: "Privacy Policy — MathswithSD",
+  description: "Privacy Policy for MathswithSD. Learn about how we collect, protect, and use student data, test answers, and scanning details.",
 };
 
 export default function PrivacyPolicy() {
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
           <div className="flex gap-3 p-5 bg-slate-50 border-l-4 border-slate-700 rounded-r-2xl text-slate-800">
             <Info size={20} className="flex-shrink-0 text-slate-700" />
             <p className="text-xs font-semibold leading-relaxed">
-              This Privacy Policy governs the collection, use, and protection of data for MathsWithSD services, including our web application, student platform, and mobile applications.
+              This Privacy Policy governs the collection, use, and protection of data for MathswithSD services, including our web application, student platform, and mobile applications.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
             <section className="flex flex-col gap-2">
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">1. Introduction</h3>
               <p>
-                Welcome to <strong>MathsWithSD</strong> ("we," "our," or "us"). We are committed to protecting the privacy of our students, teachers, and administrators. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (<a href="https://mathswithsd.in" className="text-slate-900 hover:underline font-semibold">https://mathswithsd.in</a>) and use our learning platform or mobile applications.
+                Welcome to <strong>MathswithSD</strong> ("we," "our," or "us"). We are committed to protecting the privacy of our students, teachers, and administrators. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (<a href="https://MathswithSD.in" className="text-slate-900 hover:underline font-semibold">https://MathswithSD.in</a>) and use our learning platform or mobile applications.
               </p>
               <p>
                 By accessing or using our services, you agree to the terms of this Privacy Policy. If you do not agree with the terms of this policy, please do not access the platform.
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
             <section className="flex flex-col gap-2">
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">6. Children's Privacy</h3>
               <p>
-                Because MathsWithSD serves secondary school students (Classes 9–12), we take children's privacy extremely seriously. We do not allow self-registration for students under age 13 without school authorization or parental/guardian consent. If we learn that personal information has been collected from a child under 13 without verification of parental consent, we will delete that information immediately.
+                Because MathswithSD serves secondary school students (Classes 9–12), we take children's privacy extremely seriously. We do not allow self-registration for students under age 13 without school authorization or parental/guardian consent. If we learn that personal information has been collected from a child under 13 without verification of parental consent, we will delete that information immediately.
               </p>
             </section>
 
@@ -140,8 +140,8 @@ export default function PrivacyPolicy() {
                 If you have any questions or concerns about this Privacy Policy, your data, or our practices, please contact us:
               </p>
               <div className="bg-[#f8fafc] border border-slate-200 p-5 rounded-2xl flex flex-col gap-2">
-                <p><strong>Organization:</strong> MathsWithSD</p>
-                <p><strong>Support Website:</strong> <a href="https://mathswithsd.in" className="text-slate-900 hover:underline">https://mathswithsd.in</a></p>
+                <p><strong>Organization:</strong> MathswithSD</p>
+                <p><strong>Support Website:</strong> <a href="https://MathswithSD.in" className="text-slate-900 hover:underline">https://MathswithSD.in</a></p>
                 <p><strong>Email Address:</strong> <a href="mailto:kalpajitbepary@gmail.com" className="text-slate-900 hover:underline font-semibold font-semibold">kalpajitbepary@gmail.com</a></p>
               </div>
             </section>

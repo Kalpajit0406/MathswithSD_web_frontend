@@ -1,19 +1,19 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 import { 
   UserPlus, LogIn, LayoutGrid, FileSearch, PlayCircle, Clock, ArrowLeftRight, Bookmark, 
   CheckSquare, Hourglass, BarChart3, Award, WifiOff, AlertTriangle 
 } from "lucide-react";
 
 export const metadata = {
-  title: "Student Guide — MathsWithSD",
-  description: "Comprehensive guide for students using the MathsWithSD mobile application. Learn about proctored exams, leaderboards, and navigation.",
+  title: "Student Guide — MathswithSD",
+  description: "Comprehensive guide for students using the MathswithSD mobile application. Learn about proctored exams, leaderboards, and navigation.",
 };
 
 const guideSections = [
   {
     icon: UserPlus,
     title: "Account Creation",
-    desc: "Launch the MathsWithSD student application on your mobile device. Tap the 'Register' link on the login page. Provide your full name, cohort details (e.g. Grade 12A), and a valid mobile number. Submit the form. A registration request is dispatched to your instructor. Once approved, your account becomes active."
+    desc: "Launch the MathswithSD student application on your mobile device. Tap the 'Register' link on the login page. Provide your full name, cohort details (e.g. Grade 12A), and a valid mobile number. Submit the form. A registration request is dispatched to your instructor. Once approved, your account becomes active."
   },
   {
     icon: LogIn,
@@ -107,7 +107,7 @@ export default function StudentGuide() {
             Student Application Guide
           </h1>
           <p className="text-base text-slate-500">
-            A comprehensive manual describing how to register, take proctored tests, and review performance stats in MathsWithSD.
+            A comprehensive manual describing how to register, take proctored tests, and review performance stats in MathswithSD.
           </p>
         </div>
 

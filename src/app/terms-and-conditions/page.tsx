@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import MathBackground from "@/components/MathBackground";
 import { Scale, ArrowLeft, Calendar, FileText, Info } from "lucide-react";
 
 export const metadata = {
-  title: "Terms and Conditions — MathsWithSD",
-  description: "Terms and Conditions for the MathsWithSD platform. Read about user responsibilities, platform rules, and intellectual property.",
+  title: "Terms and Conditions — MathswithSD",
+  description: "Terms and Conditions for the MathswithSD platform. Read about user responsibilities, platform rules, and intellectual property.",
 };export default function TermsAndConditions() {
   return (
     <div className="relative py-16 lg:py-24 bg-[#f8fafc] min-h-screen text-[#1f2937] font-sans transition-colors duration-300">
@@ -47,7 +47,7 @@ export const metadata = {
             <section className="flex flex-col gap-2">
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">1. Acceptance of Terms</h3>
               <p>
-                Welcome to <strong>MathsWithSD</strong> ("we," "our," or "us"). These Terms and Conditions govern your access to and use of our website (<a href="https://mathswithsd.in" className="text-slate-900 hover:underline font-semibold">https://mathswithsd.in</a>), mobile applications, and online educational services. By creating an account, logging in, or using any part of the services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.
+                Welcome to <strong>MathswithSD</strong> ("we," "our," or "us"). These Terms and Conditions govern your access to and use of our website (<a href="https://MathswithSD.in" className="text-slate-900 hover:underline font-semibold">https://MathswithSD.in</a>), mobile applications, and online educational services. By creating an account, logging in, or using any part of the services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.
               </p>
             </section>
 
@@ -69,7 +69,7 @@ export const metadata = {
             <section className="flex flex-col gap-2">
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">3. Code of Conduct & Acceptable Use</h3>
               <p>
-                MathsWithSD is an educational testing and learning platform. You are prohibited from:
+                MathswithSD is an educational testing and learning platform. You are prohibited from:
               </p>
               <ul className="list-disc pl-5 flex flex-col gap-1.5">
                 <li>Using the platform for any unlawful purpose or to solicit others to perform unlawful acts.</li>
@@ -84,7 +84,7 @@ export const metadata = {
             <section className="flex flex-col gap-2">
               <h3 className="text-base font-bold text-slate-900 uppercase tracking-wide">4. Intellectual Property Rights</h3>
               <p>
-                All content included on the platform, such as text, mathematical equations, diagrams, rendering models, graphics, logos, question banks, and software code, is the property of MathsWithSD or its content creators and is protected by copyright, trademark, and other intellectual property laws.
+                All content included on the platform, such as text, mathematical equations, diagrams, rendering models, graphics, logos, question banks, and software code, is the property of MathswithSD or its content creators and is protected by copyright, trademark, and other intellectual property laws.
               </p>
               <p>
                 You may access the materials solely for your personal, non-commercial educational use. You may not distribute, reproduce, modify, or resell any part of the materials without explicit written consent from us.
@@ -98,7 +98,7 @@ export const metadata = {
                 The platform is provided on an "as-is" and "as-available" basis. We make no representations or warranties of any kind, express or implied, regarding the operation of the services, the accuracy of formula interpretations, or the continuous availability of the network.
               </p>
               <p>
-                To the maximum extent permitted by law, MathsWithSD shall not be liable for any damages arising out of the use or inability to use the platform, including lost progress data, connection latency, or test attempt interruptions.
+                To the maximum extent permitted by law, MathswithSD shall not be liable for any damages arising out of the use or inability to use the platform, including lost progress data, connection latency, or test attempt interruptions.
               </p>
             </section>
 
@@ -117,8 +117,8 @@ export const metadata = {
                 For questions regarding these Terms and Conditions or the platform rules, please contact support:
               </p>
               <div className="bg-[#f8fafc] border border-slate-200 p-5 rounded-2xl flex flex-col gap-2">
-                <p><strong>Organization:</strong> MathsWithSD</p>
-                <p><strong>Support Website:</strong> <a href="https://mathswithsd.in" className="text-slate-900 hover:underline">https://mathswithsd.in</a></p>
+                <p><strong>Organization:</strong> MathswithSD</p>
+                <p><strong>Support Website:</strong> <a href="https://MathswithSD.in" className="text-slate-900 hover:underline">https://MathswithSD.in</a></p>
                 <p><strong>Email Address:</strong> <a href="mailto:kalpajitbepary@gmail.com" className="text-slate-900 hover:underline font-semibold font-semibold">kalpajitbepary@gmail.com</a></p>
               </div>
             </section>

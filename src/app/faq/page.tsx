@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import MathBackground from "@/components/MathBackground";
@@ -20,7 +20,7 @@ const faqs: FAQItem[] = [
   {
     category: "account",
     q: "How do I reset my password if I forget it?",
-    a: "MathsWithSD handles authentication via your registered mobile number. If you forget your password, contact your educator directly to request a password reset from the administrative dashboard."
+    a: "MathswithSD handles authentication via your registered mobile number. If you forget your password, contact your educator directly to request a password reset from the administrative dashboard."
   },
   {
     category: "account",
@@ -35,7 +35,7 @@ const faqs: FAQItem[] = [
   {
     category: "account",
     q: "How do I request deletion of my student account and historical data?",
-    a: "You can request account deletion by emailing kalpajit.dev@mathswithsd.in or using the administrative contact details. Our team will verify and delete your profile along with all quiz records within 48 hours."
+    a: "You can request account deletion by emailing kalpajit.dev@MathswithSD.in or using the administrative contact details. Our team will verify and delete your profile along with all quiz records within 48 hours."
   },
   {
     category: "account",
@@ -111,7 +111,7 @@ const faqs: FAQItem[] = [
   {
     category: "technical",
     q: "What happens if my internet connection fails during a test?",
-    a: "MathsWithSD is equipped with a robust Offline Recovery Shield. The app immediately caches your answers inside a secure local SQLite database. You can proceed with the test, and progress automatically syncs back once connection returns."
+    a: "MathswithSD is equipped with a robust Offline Recovery Shield. The app immediately caches your answers inside a secure local SQLite database. You can proceed with the test, and progress automatically syncs back once connection returns."
   },
   {
     category: "technical",
@@ -141,12 +141,12 @@ const faqs: FAQItem[] = [
   {
     category: "technical",
     q: "What Android versions are supported?",
-    a: "MathsWithSD supports Android 8.0 (Oreo, API Level 26) and above, ensuring compatibility with older and budget mobile phones."
+    a: "MathswithSD supports Android 8.0 (Oreo, API Level 26) and above, ensuring compatibility with older and budget mobile phones."
   },
   {
     category: "technical",
     q: "Is there an iOS version of the student application?",
-    a: "Currently, MathsWithSD is distributed exclusively via the Google Play Store for Android. An iOS release is planned for a future update cycle."
+    a: "Currently, MathswithSD is distributed exclusively via the Google Play Store for Android. An iOS release is planned for a future update cycle."
   },
   
   // Category: Privacy & Security
@@ -158,7 +158,7 @@ const faqs: FAQItem[] = [
   {
     category: "privacy",
     q: "Does the app track my physical location?",
-    a: "No. MathsWithSD only requests permissions for Camera and Network access, which are strictly used for barcode scans and coordinating offline data syncs."
+    a: "No. MathswithSD only requests permissions for Camera and Network access, which are strictly used for barcode scans and coordinating offline data syncs."
   },
   {
     category: "privacy",

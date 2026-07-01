@@ -1,9 +1,9 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 import { GitCommit, Tag } from "lucide-react";
 
 export const metadata = {
-  title: "Changelog & Release Notes — MathsWithSD",
-  description: "Check the design decisions, system updates, and release logs for MathsWithSD applications.",
+  title: "Changelog & Release Notes — MathswithSD",
+  description: "Check the design decisions, system updates, and release logs for MathswithSD applications.",
 };
 
 const logs = [

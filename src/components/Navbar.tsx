@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Play } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { href: "/about", label: "About" },
@@ -25,11 +25,17 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-rose-500 text-white font-bold shadow-md shadow-blue-500/20">
-              <span className="text-xl">+</span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl overflow-hidden shadow-md shadow-blue-500/20">
+              <Image
+                src="/app_icon.jpg"
+                alt="MathswithSD Logo"
+                width={36}
+                height={36}
+                className="object-cover w-full h-full"
+              />
             </div>
             <span className="font-heading text-lg font-extrabold text-slate-900 tracking-tight">
-              MathsWith<span className="text-blue-600 group-hover:text-blue-500 transition-colors">SD</span>
+              MathswithSD
             </span>
           </Link>
 
@@ -52,7 +58,6 @@ export default function Navbar() {
 
           {/* Header Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <ThemeToggle />
             <Link
               href="/download"
               className="flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm font-bold shadow-md shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-0.5"
@@ -64,7 +69,6 @@ export default function Navbar() {
 
           {/* Mobile Actions */}
           <div className="flex items-center gap-2 md:hidden">
-            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors"

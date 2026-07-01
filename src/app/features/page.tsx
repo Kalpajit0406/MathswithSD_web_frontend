@@ -1,11 +1,11 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 import { 
   FileText, BarChart2, Cpu, Shield, CloudLightning, RefreshCcw, Search, LayoutTemplate 
 } from "lucide-react";
 
 export const metadata = {
-  title: "Features Breakdown — MathsWithSD",
-  description: "Explore the comprehensive features of MathsWithSD: advanced proctoring, detailed analytics, chapter normalization, and math typesetting.",
+  title: "Features Breakdown — MathswithSD",
+  description: "Explore the comprehensive features of MathswithSD: advanced proctoring, detailed analytics, chapter normalization, and math typesetting.",
 };
 
 const featureSections = [

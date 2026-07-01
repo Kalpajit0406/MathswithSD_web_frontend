@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import Link from "next/link";
 import MathBackground from "@/components/MathBackground";
@@ -89,7 +89,7 @@ export default function DataDeletion() {
                   Data Removal Request
                 </h1>
                 <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-                  Request the permanent deletion of your MathsWithSD account and performance records.
+                  Request the permanent deletion of your MathswithSD account and performance records.
                 </p>
               </div>
 

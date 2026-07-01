@@ -1,8 +1,8 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 
 export const metadata = {
-  title: "Cookie Policy — MathsWithSD",
-  description: "Official cookie policy for the MathsWithSD website.",
+  title: "Cookie Policy — MathswithSD",
+  description: "Official cookie policy for the MathswithSD website.",
 };
 
 export default function CookiePolicy() {

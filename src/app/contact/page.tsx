@@ -43,7 +43,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <User className="text-cyan-500 flex-shrink-0" size={18} />
                   <div>
-                    <span className="block font-bold text-slate-800 text-xs">Instructor / Developer</span>
+                    <span className="block font-bold text-slate-800 text-xs">Developer</span>
                     <span>Kalpajit Bepary</span>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                   <Mail className="text-cyan-500 flex-shrink-0" size={18} />
                   <div>
                     <span className="block font-bold text-slate-800 text-xs">Email</span>
-                    <a href="mailto:kalpajit.dev@mathswithsd.in" className="hover:text-cyan-500 transition-colors">kalpajit.dev@mathswithsd.in</a>
+                    <a href="mailto:kalpajitbepary@gmail.com" className="hover:text-cyan-500 transition-colors">kalpajitbepary@gmail.com</a>
                   </div>
                 </div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <Clock className="text-cyan-500 flex-shrink-0" size={18} />
                   <div>
-                    <span className="block font-bold text-slate-800 text-xs">Office Hours</span>
+                    <span className="block font-bold text-slate-800 text-xs">Contact Hours</span>
                     <span>Monday - Saturday: 9:00 AM - 6:00 PM</span>
                   </div>
                 </div>

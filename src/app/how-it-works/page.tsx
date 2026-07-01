@@ -1,11 +1,11 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 import { 
   Download, Smartphone, Key, BookOpen, Clock, CheckCircle2, ShieldCheck, BarChart2, Star 
 } from "lucide-react";
 
 export const metadata = {
-  title: "How It Works — MathsWithSD",
-  description: "Step-by-step developer and student guide on setting up the MathsWithSD student application.",
+  title: "How It Works — MathswithSD",
+  description: "Step-by-step developer and student guide on setting up the MathswithSD student application.",
 };
 
 const steps = [

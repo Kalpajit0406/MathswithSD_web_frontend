@@ -1,10 +1,10 @@
-import MathBackground from "@/components/MathBackground";
+﻿import MathBackground from "@/components/MathBackground";
 import { Download, CheckCircle, ShieldAlert, Cpu } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Download Student App — MathsWithSD",
-  description: "Get the official MathsWithSD student application for Android. Review requirements, permissions, and latest release highlights.",
+  title: "Download Student App — MathswithSD",
+  description: "Get the official MathswithSD student application for Android. Review requirements, permissions, and latest release highlights.",
 };
 
 const releaseHighlights = [
@@ -38,7 +38,7 @@ export default function DownloadPage() {
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
           <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Google Play Access</span>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900">
-            Download MathsWithSD App
+            Download MathswithSD App
           </h1>
           <p className="text-base text-slate-500">
             Install the student application on your Android mobile device to begin assessments and track leaderboard metrics.
@@ -55,7 +55,7 @@ export default function DownloadPage() {
                   <span>+</span>
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-xl font-bold text-slate-900">MathsWithSD Student</h2>
+                  <h2 className="text-xl font-bold text-slate-900">MathswithSD Student</h2>
                   <span className="text-xs text-slate-500">Official Educational Release</span>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function DownloadPage() {
 
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.mathswithsd.mathswithsd"
+                  href="https://play.google.com/store/apps/details?id=com.MathswithSD.MathswithSD"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-850 text-white py-3.5 font-bold shadow-md transition-colors"

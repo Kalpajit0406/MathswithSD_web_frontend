@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Github, Instagram, Facebook, Youtube, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -99,7 +99,7 @@ export default function Footer() {
               <span className="font-semibold text-slate-800">Educator: Kalpajit Bepary</span>
               <div className="flex items-center gap-2">
                 <Mail size={12} className="text-cyan-500" />
-                <a href="mailto:kalpajit.dev@mathswithsd.in" className="hover:text-cyan-500 transition-colors">kalpajit.dev@mathswithsd.in</a>
+                <a href="mailto:kalpajit.dev@MathswithSD.in" className="hover:text-cyan-500 transition-colors">kalpajit.dev@MathswithSD.in</a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={12} className="text-cyan-500" />
@@ -114,10 +114,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-200 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
-          <span>&copy; {new Date().getFullYear()} MathsWithSD. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} MathswithSD. All rights reserved.</span>
           <div className="flex items-center gap-1.5 font-medium">
             <span>Official Portal for</span>
-            <span className="text-cyan-500 text-shadow-sm font-semibold tracking-wide">mathswithsd.in</span>
+            <span className="text-cyan-500 text-shadow-sm font-semibold tracking-wide">MathswithSD.in</span>
           </div>
         </div>
       </div>
