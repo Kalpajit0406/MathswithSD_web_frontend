@@ -9,24 +9,24 @@ export const metadata = {
 
 export default function TermsAndConditions() {
   return (
-    <div className="relative py-16 lg:py-24 bg-[#faf9fc] dark:bg-slate-950 min-h-screen text-[#1f2937] dark:text-slate-100 font-sans transition-colors duration-300">
+    <div className="relative py-16 lg:py-24 bg-[#f8fafc] dark:bg-slate-950 min-h-screen text-[#1f2937] dark:text-slate-100 font-sans transition-colors duration-300">
       <MathBackground />
 
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Back Button */}
         <div className="mb-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4a148c] dark:text-[#a078ff] hover:underline">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white hover:underline">
             <ArrowLeft size={16} />
             <span>Back to main website</span>
           </Link>
         </div>
 
-        <div className="bg-white dark:bg-slate-900 border border-[#4a148c]/10 dark:border-slate-800 rounded-3xl p-8 lg:p-12 shadow-[0_10px_30px_rgba(74,20,140,0.02)] flex flex-col gap-8">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 lg:p-12 shadow-sm flex flex-col gap-8">
           
           <div>
-            <h1 className="text-3xl font-extrabold text-[#4a148c] dark:text-[#a078ff] tracking-tight flex items-center gap-3">
-              <Scale className="text-[#4a148c] dark:text-[#a078ff]" size={32} />
+            <h1 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-3">
+              <Scale className="text-slate-700 dark:text-slate-350" size={32} />
               <span>Terms and Conditions</span>
             </h1>
             <div className="flex items-center gap-2 mt-3 text-xs text-slate-500 dark:text-slate-400 font-semibold">
@@ -36,8 +36,8 @@ export default function TermsAndConditions() {
           </div>
 
           {/* Alert Highlight */}
-          <div className="flex gap-3 p-5 bg-[#f3e5f5] dark:bg-[#4a148c]/10 border-l-4 border-[#4a148c] dark:border-[#a078ff] rounded-r-2xl text-[#380d6b] dark:text-slate-200">
-            <Info size={20} className="flex-shrink-0 text-[#4a148c] dark:text-[#a078ff]" />
+          <div className="flex gap-3 p-5 bg-slate-50 dark:bg-slate-800/20 border-l-4 border-slate-700 dark:border-slate-400 rounded-r-2xl text-slate-800 dark:text-slate-200">
+            <Info size={20} className="flex-shrink-0 text-slate-700 dark:text-slate-300" />
             <p className="text-xs font-semibold leading-relaxed">
               Please read these Terms and Conditions carefully before using our platform. By accessing or using the platform, you agree to be bound by these terms.
             </p>
@@ -47,15 +47,15 @@ export default function TermsAndConditions() {
             
             {/* Acceptance of Terms */}
             <section className="flex flex-col gap-2">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">1. Acceptance of Terms</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">1. Acceptance of Terms</h3>
               <p>
-                Welcome to <strong>MathsWithSD</strong> ("we," "our," or "us"). These Terms and Conditions govern your access to and use of our website (<a href="https://mathswithsd.in" className="text-[#4a148c] dark:text-[#a078ff] hover:underline font-semibold">https://mathswithsd.in</a>), mobile applications, and online educational services. By creating an account, logging in, or using any part of the services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.
+                Welcome to <strong>MathsWithSD</strong> ("we," "our," or "us"). These Terms and Conditions govern your access to and use of our website (<a href="https://mathswithsd.in" className="text-slate-900 dark:text-white hover:underline font-semibold">https://mathswithsd.in</a>), mobile applications, and online educational services. By creating an account, logging in, or using any part of the services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.
               </p>
             </section>
 
             {/* User Accounts */}
             <section className="flex flex-col gap-2">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">2. User Accounts & Security</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">2. User Accounts & Security</h3>
               <p>
                 To access certain features of the platform, you must register for a student or administrator account. You agree to:
               </p>
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
 
             {/* Acceptable Use */}
             <section className="flex flex-col gap-2">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">3. Code of Conduct & Acceptable Use</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">3. Code of Conduct & Acceptable Use</h3>
               <p>
                 MathsWithSD is an educational testing and learning platform. You are prohibited from:
               </p>
@@ -84,7 +84,7 @@ export default function TermsAndConditions() {
 
             {/* Intellectual Property */}
             <section className="flex flex-col gap-2">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">4. Intellectual Property Rights</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">4. Intellectual Property Rights</h3>
               <p>
                 All content included on the platform, such as text, mathematical equations, diagrams, rendering models, graphics, logos, question banks, and software code, is the property of MathsWithSD or its content creators and is protected by copyright, trademark, and other intellectual property laws.
               </p>
@@ -95,7 +95,7 @@ export default function TermsAndConditions() {
 
             {/* Limitation of Liability */}
             <section className="flex flex-col gap-2">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">5. Disclaimer & Limitation of Liability</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">5. Disclaimer & Limitation of Liability</h3>
               <p>
                 The platform is provided on an "as-is" and "as-available" basis. We make no representations or warranties of any kind, express or implied, regarding the operation of the services, the accuracy of formula interpretations, or the continuous availability of the network.
               </p>
@@ -106,7 +106,7 @@ export default function TermsAndConditions() {
 
             {/* Termination */}
             <section className="flex flex-col gap-2">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">6. Account Suspension & Termination</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">6. Account Suspension & Termination</h3>
               <p>
                 We reserve the right, without notice and at our sole discretion, to suspend or terminate your account and block your access to the platform for any breach of these Terms and Conditions, including security tampering, cheating, or illegal activity.
               </p>
@@ -114,14 +114,14 @@ export default function TermsAndConditions() {
 
             {/* Contact Information */}
             <section className="flex flex-col gap-4 mt-4 border-t border-slate-100 dark:border-slate-800/80 pt-6">
-              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">7. Contact Information</h3>
+              <h3 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide">7. Contact Information</h3>
               <p>
                 For questions regarding these Terms and Conditions or the platform rules, please contact support:
               </p>
-              <div className="bg-[#faf9fc] dark:bg-slate-950 border border-[#4a148c]/10 dark:border-slate-850 p-5 rounded-2xl flex flex-col gap-2">
+              <div className="bg-[#f8fafc] dark:bg-slate-950 border border-slate-200 dark:border-slate-850 p-5 rounded-2xl flex flex-col gap-2">
                 <p><strong>Organization:</strong> MathsWithSD</p>
-                <p><strong>Support Website:</strong> <a href="https://mathswithsd.in" className="text-[#4a148c] dark:text-[#a078ff] hover:underline">https://mathswithsd.in</a></p>
-                <p><strong>Email Address:</strong> <a href="mailto:kalpajitbepary@gmail.com" className="text-[#4a148c] dark:text-[#a078ff] hover:underline font-semibold">kalpajitbepary@gmail.com</a></p>
+                <p><strong>Support Website:</strong> <a href="https://mathswithsd.in" className="text-slate-900 dark:text-white hover:underline">https://mathswithsd.in</a></p>
+                <p><strong>Email Address:</strong> <a href="mailto:kalpajitbepary@gmail.com" className="text-slate-900 dark:text-white hover:underline font-semibold font-semibold">kalpajitbepary@gmail.com</a></p>
               </div>
             </section>
 

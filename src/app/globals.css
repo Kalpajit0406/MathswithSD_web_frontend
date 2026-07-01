@@ -19,8 +19,8 @@
   --card-border: #e2e8f0;
   --accent-glow: rgba(37, 99, 235, 0.05);
   --muted: #64748b;
-  --heading-font: 'Outfit', system-ui, sans-serif;
-  --body-font: 'Inter', system-ui, sans-serif;
+  --heading-font: 'Styrene', 'Outfit', system-ui, sans-serif;
+  --body-font: 'Anthropic Sans', 'Inter', system-ui, sans-serif;
 }
 
 .dark {
