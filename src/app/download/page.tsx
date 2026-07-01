@@ -77,7 +77,7 @@ export default function DownloadPage() {
 
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
                 <a
-                  href="https://play.google.com/store"
+                  href="https://play.google.com/store/apps/details?id=com.mathswithsd.mathswithsd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-900 hover:bg-slate-850 text-white py-3.5 font-bold shadow-md transition-colors"
