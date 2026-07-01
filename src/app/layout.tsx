@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MathsWithSD — AI-Powered Math Learning & Examination Suite",
-  description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time Mathpix OCR ingestion, dynamic assessments, live leaderboards, and proctoring.",
-  keywords: ["MathsWithSD", "math assessment", "math quiz", "Mathpix OCR", "proctored exam", "student math", "LaTeX solver"],
+  description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, live leaderboards, and proctoring.",
+  keywords: ["MathsWithSD", "math assessment", "math quiz", "math solver", "proctored exam", "student math", "LaTeX solver"],
   authors: [{ name: "Kalpajit Bepary" }],
   robots: "index, follow",
   openGraph: {
     title: "MathsWithSD — AI-Powered Math Learning & Examination Suite",
-    description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time Mathpix OCR ingestion, dynamic assessments, and proctoring.",
+    description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, and proctoring.",
     url: "https://mathswithsd.in",
     siteName: "MathsWithSD",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MathsWithSD — AI-Powered Math Learning & Examination Suite",
-    description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time Mathpix OCR ingestion, dynamic assessments, and proctoring.",
+    description: "Discover MathsWithSD, the premier dual-application ecosystem featuring real-time formula rendering, dynamic assessments, and proctoring.",
     images: ["/hero_showcase.jpg"],
   },
 };

@@ -22,7 +22,7 @@ const logs = [
     changes: [
       "Migrated backend from single direct connections to replica set MongoDB configurations, resolving failover timeout crashes.",
       "Re-engineered scoring logic in resultEvaluationService.js into separate unit-tested modules.",
-      "Integrated Mathpix OCR pipeline into the administrative app to capture physical math equations instantly."
+      "Integrated advanced equation-editor pipeline into the administrative app to capture and render mathematical equations instantly."
     ]
   },
   {

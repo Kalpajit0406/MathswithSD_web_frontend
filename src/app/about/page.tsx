@@ -35,7 +35,7 @@ export default function About() {
                 MathsWithSD is a premium, secure educational testing ecosystem built around two coordination points: an administrative dashboard for the educator and a mobile assessment application for the student.
               </p>
               <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                By integrating state-of-the-art Mathpix OCR technology, we eliminate the traditional barriers of typesetting mathematical formulas, allowing teachers to scan handwritten sheets and convert them into fully renderable LaTeX questions instantly.
+                By integrating our advanced mathematical rendering engine, we eliminate the traditional barriers of typesetting complex formulas, allowing teachers to create and convert equations into fully renderable LaTeX questions instantly.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

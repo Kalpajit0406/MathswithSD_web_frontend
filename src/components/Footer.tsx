@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">
-              The dual-application suite engineered to digitize mathematics learning using Mathpix OCR scanning, secure proctoring integrity, and real-time leaderboards.
+              The dual-application suite engineered to elevate mathematics learning using advanced formula rendering, secure proctoring integrity, and real-time leaderboards.
             </p>
             <div className="flex items-center gap-3.5 mt-2">
               <a

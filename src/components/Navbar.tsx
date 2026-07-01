@@ -25,11 +25,11 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-500 text-white font-bold shadow-md shadow-violet-500/20">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-rose-500 text-white font-bold shadow-md shadow-blue-500/20">
               <span className="text-xl">+</span>
             </div>
             <span className="font-heading text-lg font-extrabold text-slate-900 dark:text-white tracking-tight">
-              MathsWith<span className="text-cyan-500 group-hover:text-cyan-400 transition-colors">SD</span>
+              MathsWith<span className="text-blue-600 group-hover:text-blue-500 transition-colors">SD</span>
             </span>
           </Link>
 
@@ -39,9 +39,9 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-cyan-500 ${
+                className={`text-sm font-semibold transition-colors hover:text-blue-600 ${
                   pathname === link.href
-                    ? "text-cyan-500 font-semibold"
+                    ? "text-blue-600 font-extrabold"
                     : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100"
                 }`}
               >
@@ -55,7 +55,7 @@ export default function Navbar() {
             <ThemeToggle />
             <Link
               href="/download"
-              className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-white px-4 py-2 text-sm font-semibold shadow-md shadow-cyan-500/10 hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-0.5"
+              className="flex items-center gap-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm font-bold shadow-md shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-0.5"
             >
               <Play size={14} className="fill-current" />
               <span>Download App</span>
@@ -87,7 +87,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block rounded-lg px-3 py-2 text-base font-semibold transition-colors ${
                   pathname === link.href
-                    ? "bg-slate-50 dark:bg-slate-900 text-cyan-500"
+                    ? "bg-slate-50 dark:bg-slate-900 text-blue-600"
                     : "text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900"
                 }`}
               >
@@ -98,7 +98,7 @@ export default function Navbar() {
               <Link
                 href="/download"
                 onClick={() => setIsOpen(false)}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 text-white py-2.5 font-bold shadow-md shadow-cyan-500/10"
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 text-white py-2.5 font-bold shadow-md shadow-blue-500/10"
               >
                 <Play size={14} className="fill-current" />
                 <span>Download App</span>
