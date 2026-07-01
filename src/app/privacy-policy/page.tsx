@@ -1,89 +1,152 @@
+import Link from "next/link";
 import MathBackground from "@/components/MathBackground";
+import { Shield, ArrowLeft, Calendar, FileText, Info } from "lucide-react";
 
 export const metadata = {
   title: "Privacy Policy — MathsWithSD",
-  description: "Official privacy policy for the MathsWithSD mobile applications and website.",
+  description: "Privacy Policy for MathsWithSD. Learn about how we collect, protect, and use student data, test answers, and scanning details.",
 };
 
 export default function PrivacyPolicy() {
   return (
-    <div className="relative py-16 lg:py-24 bg-slate-50 dark:bg-slate-950 min-h-screen">
+    <div className="relative py-16 lg:py-24 bg-[#faf9fc] dark:bg-slate-950 min-h-screen text-[#1f2937] dark:text-slate-100 font-sans transition-colors duration-300">
       <MathBackground />
 
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto flex flex-col gap-4 mb-16">
-          <span className="text-xs font-bold tracking-widest text-cyan-500 uppercase">Legal Policy</span>
-          <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white">
-            Privacy Policy
-          </h1>
-          <p className="text-sm text-slate-400">
-            Last Updated: June 30, 2026
-          </p>
+        {/* Header Back Button */}
+        <div className="mb-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#4a148c] dark:text-[#a078ff] hover:underline">
+            <ArrowLeft size={16} />
+            <span>Back to main website</span>
+          </Link>
         </div>
 
-        <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 rounded-3xl p-8 lg:p-12 shadow-sm prose prose-slate dark:prose-invert max-w-none text-sm text-slate-600 dark:text-slate-400 leading-relaxed flex flex-col gap-6">
+        <div className="bg-white dark:bg-slate-900 border border-[#4a148c]/10 dark:border-slate-800 rounded-3xl p-8 lg:p-12 shadow-[0_10px_30px_rgba(74,20,140,0.02)] flex flex-col gap-8">
           
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">1. Introduction</h2>
-            <p>
-              This Privacy Policy explains how MathsWithSD (\"we\", \"us\", or \"our\") collects, uses, stores, and protects student information when using our mobile applications (distributed on the Google Play Store) and our public website (<a href="https://mathswithsd.in" className="text-cyan-500 hover:underline">mathswithsd.in</a>).
-            </p>
-            <p>
-              By accessing or using our services, you consent to the data collection policies detailed in this document. We are committed to safeguarding your private academic data in compliance with standard mobile distribution regulations.
-            </p>
-          </section>
+          <div>
+            <h1 className="text-3xl font-extrabold text-[#4a148c] dark:text-[#a078ff] tracking-tight flex items-center gap-3">
+              <Shield className="text-[#4a148c] dark:text-[#a078ff]" size={32} />
+              <span>Privacy Policy</span>
+            </h1>
+            <div className="flex items-center gap-2 mt-3 text-xs text-slate-500 dark:text-slate-400 font-semibold">
+              <Calendar size={14} />
+              <span>Last Updated: June 16, 2026</span>
+            </div>
+          </div>
 
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">2. Information We Collect</h2>
-            <p>We only collect the minimum personal and telemetry data necessary to deliver secure assessments:</p>
-            <ul className="list-disc pl-5 flex flex-col gap-1.5 mt-1">
-              <li><strong>Registration Profile:</strong> Student full name, selected class cohort (e.g. Grade 12A), and a valid mobile phone number for authentication.</li>
-              <li><strong>Exam Submissions:</strong> Student answers, start times, completion duration, and calculated evaluation points.</li>
-              <li><strong>Proctoring Integrity Logs:</strong> Screen focus defocus warnings and local device clock drift adjustment timestamps.</li>
-              <li><strong>Device Configuration:</strong> Operating system version and device memory constraints used solely to optimize rendering performance.</li>
-            </ul>
-          </section>
-
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">3. How We Use Your Data</h2>
-            <p>Your academic data is used exclusively to facilitate class testing:</p>
-            <ul className="list-disc pl-5 flex flex-col gap-1.5 mt-1">
-              <li>To verify your enrollment in your student cohort.</li>
-              <li>To calculate exam metrics (Accuracy, Attempt Rate) using our backend scoring algorithms.</li>
-              <li>To coordinate point leaderboard standings in your cohort group.</li>
-              <li>To supply proctoring violation logs to your verified cohort instructor for exam audits.</li>
-            </ul>
-          </section>
-
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">4. Data Retention & Deletion</h2>
-            <p>
-              We retain your account profile and assessment logs only as long as you are enrolled in an active study cohort. Students can request immediate deletion of their personal profiles and test histories by contacting the administrator at <a href="mailto:kalpajit.dev@mathswithsd.in" className="text-cyan-500 hover:underline">kalpajit.dev@mathswithsd.in</a>. For detailed instructions, see our <a href="/data-deletion" className="text-cyan-500 hover:underline">Data Deletion Policy</a>.
+          {/* Alert Highlight */}
+          <div className="flex gap-3 p-5 bg-[#f3e5f5] dark:bg-[#4a148c]/10 border-l-4 border-[#4a148c] dark:border-[#a078ff] rounded-r-2xl text-[#380d6b] dark:text-slate-200">
+            <Info size={20} className="flex-shrink-0 text-[#4a148c] dark:text-[#a078ff]" />
+            <p className="text-xs font-semibold leading-relaxed">
+              This Privacy Policy governs the collection, use, and protection of data for MathsWithSD services, including our web application, student platform, and mobile applications.
             </p>
-          </section>
+          </div>
 
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">5. Third-Party Sharing & Ads</h2>
-            <p>
-              We enforce a strict zero-sharing policy. We do not sell, rent, or lease your personal information, mobile numbers, or examination results to any third-party advertisers. The app does not display any commercial advertisements.
-            </p>
-          </section>
+          <div className="flex flex-col gap-6 text-sm text-slate-600 dark:text-slate-350 leading-relaxed">
+            
+            {/* Introduction */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">1. Introduction</h3>
+              <p>
+                Welcome to <strong>MathsWithSD</strong> ("we," "our," or "us"). We are committed to protecting the privacy of our students, teachers, and administrators. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (<a href="https://mathswithsd.in" className="text-[#4a148c] dark:text-[#a078ff] hover:underline font-semibold">https://mathswithsd.in</a>) and use our learning platform or mobile applications.
+              </p>
+              <p>
+                By accessing or using our services, you agree to the terms of this Privacy Policy. If you do not agree with the terms of this policy, please do not access the platform.
+              </p>
+            </section>
 
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">6. Security Measures</h2>
-            <p>
-              All traffic between the application and our servers is secured over HTTPS. User sessions are verified using cryptographic JSON Web Tokens (JWT). Inputs are sanitized on our MongoDB cluster to prevent injection exploits.
-            </p>
-          </section>
+            {/* Information We Collect */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">2. Information We Collect</h3>
+              <p>
+                To provide a high-quality educational experience, we collect information that helps us identify users, authenticate access, and evaluate exam submissions. We collect:
+              </p>
+              <ul className="list-disc pl-5 flex flex-col gap-1.5">
+                <li><strong>Personal Registration Details</strong>: Student name, class level (Classes 9–12 or Joint Entrance preparation), preferred language, and password.</li>
+                <li><strong>Contact Identifiers</strong>: Student mobile phone number (used for unique account identification and secure login validation).</li>
+                <li><strong>Academic Performance Data</strong>: Test responses, exam start and submission timestamps, answers submitted, and performance metrics.</li>
+                <li><strong>Scanned Image and OCR Data</strong>: Mathematical formulas, handwriting, or question papers scanned and uploaded by users to our formula rendering system.</li>
+                <li><strong>Technical Metadata</strong>: IP address, device specifications, browser type, and diagnostic logs to ensure security and prevent exam cheating.</li>
+              </ul>
+            </section>
 
-          <section className="flex flex-col gap-2">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white">7. Changes to This Policy</h2>
-            <p>
-              We may revise this policy periodically to align with Google Play store compliance adjustments. Active students will receive notifications in-app regarding any meaningful privacy changes.
-            </p>
-          </section>
+            {/* How We Use Information */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">3. How We Use Information</h3>
+              <p>
+                We process your data strictly to fulfill educational, operational, and security requirements:
+              </p>
+              <ul className="list-disc pl-5 flex flex-col gap-1.5">
+                <li>To create and manage your secure student or administrator account.</li>
+                <li>To process and score test submissions, generating performance reports for students and instructors.</li>
+                <li>To execute mathematical formula parsing and rendering (interpreting equations and text).</li>
+                <li>To enforce exam security constraints (such as preventing multiple active sessions, screen casting, or geometry overlays on mobile devices).</li>
+                <li>To diagnose technical errors, optimize database queries, and improve the speed of our services.</li>
+                <li>To communicate updates, announcements, or notifications regarding your classes and exams.</li>
+              </ul>
+            </section>
+
+            {/* Third-Party Services */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">4. Third-Party Services</h3>
+              <p>
+                We do not sell your personal data. We share information only with trusted third-party cloud service providers necessary to operate our learning system:
+              </p>
+              <ul className="list-disc pl-5 flex flex-col gap-1.5">
+                <li><strong>Database Hosting</strong>: MongoDB Atlas for secure, encrypted cloud data persistence.</li>
+                <li><strong>Cloud Storage</strong>: Cloudinary for storing uploaded math sheets and rendering files.</li>
+                <li><strong>Hosting Providers</strong>: DigitalOcean and Netlify for serving our backend infrastructure, gateways, and legal portals.</li>
+              </ul>
+              <p className="mt-2">
+                All third-party partners are vetted to ensure they maintain compliance with strict security guidelines and data privacy regulations.
+              </p>
+            </section>
+
+            {/* Data Security */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">5. Data Security</h3>
+              <p>
+                We implement robust, industry-standard administrative, technical, and physical security measures to protect your personal information:
+              </p>
+              <ul className="list-disc pl-5 flex flex-col gap-1.5">
+                <li><strong>Transport Security</strong>: SSL/TLS encryption for all data exchanged between clients (apps/browsers) and our API endpoints.</li>
+                <li><strong>Credential Hashing</strong>: Passwords are encrypted using strong, modern cryptographic hashing algorithms (bcrypt) before storage.</li>
+                <li><strong>Session Integrity</strong>: JSON Web Tokens (JWT) are signed and verified server-side with strict expiration checks to prevent hijacking.</li>
+                <li><strong>Network Protection</strong>: Rate-limiters, NoSQL injection sanitizers, and Cross-Site Scripting (XSS) filters are deployed on Nginx and Express gateways.</li>
+              </ul>
+            </section>
+
+            {/* Children's Privacy */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">6. Children's Privacy</h3>
+              <p>
+                Because MathsWithSD serves secondary school students (Classes 9–12), we take children's privacy extremely seriously. We do not allow self-registration for students under age 13 without school authorization or parental/guardian consent. If we learn that personal information has been collected from a child under 13 without verification of parental consent, we will delete that information immediately.
+              </p>
+            </section>
+
+            {/* Changes to This Policy */}
+            <section className="flex flex-col gap-2">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">7. Changes to This Policy</h3>
+              <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date. You are advised to review this policy periodically for any changes.
+              </p>
+            </section>
+
+            {/* Contact Information */}
+            <section className="flex flex-col gap-4 mt-4 border-t border-slate-100 dark:border-slate-800/80 pt-6">
+              <h3 className="text-base font-bold text-[#4a148c] dark:text-[#a078ff] uppercase tracking-wide">8. Contact Information</h3>
+              <p>
+                If you have any questions or concerns about this Privacy Policy, your data, or our practices, please contact us:
+              </p>
+              <div className="bg-[#faf9fc] dark:bg-slate-950 border border-[#4a148c]/10 dark:border-slate-850 p-5 rounded-2xl flex flex-col gap-2">
+                <p><strong>Organization:</strong> MathsWithSD</p>
+                <p><strong>Support Website:</strong> <a href="https://mathswithsd.in" className="text-[#4a148c] dark:text-[#a078ff] hover:underline">https://mathswithsd.in</a></p>
+                <p><strong>Email Address:</strong> <a href="mailto:kalpajitbepary@gmail.com" className="text-[#4a148c] dark:text-[#a078ff] hover:underline font-semibold">kalpajitbepary@gmail.com</a></p>
+              </div>
+            </section>
+
+          </div>
 
         </div>
 

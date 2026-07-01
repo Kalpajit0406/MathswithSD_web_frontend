@@ -1,0 +1,19 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/accessibility/page": "/accessibility",
+  "/changelog/page": "/changelog",
+  "/contact/page": "/contact",
+  "/cookie-policy/page": "/cookie-policy",
+  "/data-deletion/page": "/data-deletion",
+  "/download/page": "/download",
+  "/faq/page": "/faq",
+  "/favicon.ico/route": "/favicon.ico",
+  "/features/page": "/features",
+  "/how-it-works/page": "/how-it-works",
+  "/page": "/",
+  "/privacy-policy/page": "/privacy-policy",
+  "/student-guide/page": "/student-guide",
+  "/terms-and-conditions/page": "/terms-and-conditions"
+}
