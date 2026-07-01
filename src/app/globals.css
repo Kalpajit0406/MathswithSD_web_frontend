@@ -13,7 +13,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: #f8fafc;
   --foreground: #0f172a;
   --card-bg: #ffffff;
   --card-border: #e2e8f0;
@@ -21,15 +21,6 @@
   --muted: #64748b;
   --heading-font: 'Styrene', 'Outfit', system-ui, sans-serif;
   --body-font: 'Anthropic Sans', 'Inter', system-ui, sans-serif;
-}
-
-.dark {
-  --background: #0b1326;
-  --foreground: #f8fafc;
-  --card-bg: rgba(23, 31, 51, 0.7);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --accent-glow: rgba(37, 99, 235, 0.15);
-  --muted: #94a3b8;
 }
 
 body {
@@ -53,13 +44,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.2);
+  background: rgba(100, 116, 139, 0.25);
   border-radius: 99px;
   border: 2px solid var(--background);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.4);
+  background: rgba(100, 116, 139, 0.45);
 }
 
 /* Glassmorphism utility */
